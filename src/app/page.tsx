@@ -1,9 +1,14 @@
 import Image from "next/image";
+import Hero from "./components/main/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Welcome to My Portfolio</h1>
+    <main
+      className="h-full w-full"
+    >
+      <div className="flex flex-col h-[850px] gap-20">
+        <Hero />
+      </div>
     </main>
   );
 }
