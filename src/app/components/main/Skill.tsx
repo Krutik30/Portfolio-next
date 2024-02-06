@@ -27,7 +27,7 @@ const Skills = () => (
                     index={index} />
             ))}
         </div>
-
+{/* 
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
             {Frontend_skill.map((image, index) => (
                 <SkillDataProvider
@@ -37,7 +37,7 @@ const Skills = () => (
                     height={image.height}
                     index={index} />
             ))}
-        </div>
+        </div> */}
         <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
             {Backend_skill.map((image, index) => (
                 <SkillDataProvider
@@ -71,14 +71,14 @@ const Skills = () => (
 
         <div className="w-full h-full absolute">
             <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-                {/* <video
+                <video
                     className="w-full h-auto"
                     preload="false"
                     playsInline
                     loop
                     muted
                     autoPlay
-                    src="/cards-video.webm" /> */}
+                    src="/cards-video.webm" />
             </div>
         </div>
     </section>

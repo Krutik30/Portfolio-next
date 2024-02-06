@@ -83,15 +83,18 @@ export const Skill_data = [
 export const Socials = [
     {
         name: "Discord",
-        src: "/instagram.svg",
+        src: "/discord.svg",
+        href: "https://discord.com/users/939470059187875850"
     },
     {
         name: "Facebook",
-        src: "/facebook.svg",
+        src: "/twitter.svg",
+        href: "https://twitter.com/AgheraKrutik",
     },
     {
         name: "Instagram",
-        src: "/discord.svg",
+        src: "/instagram.svg",
+        href: "https://www.instagram.com/aghera_krutik/"
     },
 ];
 
@@ -162,22 +165,10 @@ export const Frontend_skill = [
 
 export const Backend_skill = [
     {
-        skill_name: "Node js",
-        Image: "/node-js.png",
-        width: 80,
-        height: 80,
-    },
-    {
         skill_name: "Express js",
         Image: "/express.png",
         width: 80,
         height: 80,
-    },
-    {
-        skill_name: "Mongo db",
-        Image: "/mongodb.png",
-        width: 40,
-        height: 40,
     },
     {
         skill_name: "Fire base",
@@ -245,7 +236,7 @@ export const Full_stack = [
 export const Other_skill = [
     {
         skill_name: "Go",
-        Image: "/go.png",
+        Image: "/rust.png",
         width: 60,
         height: 60,
     },
