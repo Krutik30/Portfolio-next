@@ -10,6 +10,18 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
+import { Variants } from 'framer-motion';
+
+const flipAnimation: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: [1, 0], // Initially visible, then hidden
+    transition: {
+      duration: 1, // Adjust the duration as needed
+    },
+  },
+};
+
 const HeroContent = () => {
   return (
     <motion.div
@@ -33,13 +45,16 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            I am
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            I am {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 cursor-writing">
               {" "}
-                Aghera Krutik
+              Aghera Krutik
               {" "}
             </span>
-            Software Engineer
+            <div className="animation-container">
+              <span className="text1">Web Developer</span>
+              <span className="text2">Software Engineer</span>
+            </div>
           </span>
         </motion.div>
 
